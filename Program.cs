@@ -27,13 +27,14 @@ class Program
             {
                 B = 7 * x * x + x - 8;
             }
-            else if (x >= 1 && x <= 4)
+            else if (x > 4)
             {
-                B = 1 / Math.Tan((x + 4) / Math.Sqrt(11)) + 3;
+                B = Math.Sqrt(1 + Math.Abs(Math.Cos(x)));
+
             }
             else
             {
-                B = Math.Sqrt(1 + Math.Abs(Math.Cos(x)));
+                B = 1 / Math.Tan((x + 4) / Math.Sqrt(11)) + 3;
             }
 
             double y = A + B;
