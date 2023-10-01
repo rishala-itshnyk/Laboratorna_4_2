@@ -14,7 +14,7 @@ class Program
         double dx = Convert.ToDouble(Console.ReadLine());
 
         Console.WriteLine("---------------------------");
-        Console.WriteLine("|    x    |       y       |");
+        Console.WriteLine("|    x     |      y       |");
         Console.WriteLine("---------------------------");
 
         double x = xp;
@@ -37,7 +37,7 @@ class Program
             }
 
             double y = A + B;
-            Console.WriteLine($"|  {x,7:F2}  |  {y,10:F3}  |");
+            Console.WriteLine($"|  {x,6:F2}  |  {y,10:F2}  |");
             x += dx;
         }
 
